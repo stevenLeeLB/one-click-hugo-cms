@@ -20,3 +20,10 @@
 
   [plugins.inputs]
     record = true
+
+# 代理规则：将主站 /resources/* 路径的请求转发给内容中心
+[[redirects]]
+  from = "/resources/*"
+  to = "https://charming-nougat.netlify.app/:splat"
+  status = 200        # status = 200 表示这是一次透明的代理（Rewrite），而不是跳转
+  force = false       # 即使存在同名的静态文件，也强制使用此规则
