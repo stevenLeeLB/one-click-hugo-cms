@@ -1,4 +1,3 @@
-baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Kaldi"
@@ -10,3 +9,5 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
 images = ["img/og-image.jpg"]
+
+baseurl = 'https://woxing.netlify.app/resources/'
